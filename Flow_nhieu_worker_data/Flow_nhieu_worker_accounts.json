@@ -1,0 +1,20 @@
+[
+  {
+    "email": "leviettung04@gmail.com",
+    "profile_dir": "C:\\Users\\ADMIN\\Desktop\\Python\\Veo 3 Tool\\AutoVeo3Pro_v6\\Auto_Veo_3_Pro\\Grok\\ReviewThreads\\Flow_nhieu_worker_data\\profiles\\leviettung04@gmail.com",
+    "cookies_file": "C:\\Users\\ADMIN\\Desktop\\Python\\Veo 3 Tool\\AutoVeo3Pro_v6\\Auto_Veo_3_Pro\\Grok\\ReviewThreads\\Flow_nhieu_worker_data\\cookies\\leviettung04@gmail.com.json",
+    "project_id": "378bfc6c-422d-4bfb-92d1-6e978432ca7b",
+    "total_generated": 0,
+    "last_login": "",
+    "status": "ready",
+    "total_credits_used": 0,
+    "monthly_credits_used": 0,
+    "credit_limit": 25000,
+    "credits_remaining": 0,
+    "credits_last_updated": "",
+    "is_grok": false,
+    "grok_proxy_url": "http://localhost:8317",
+    "grok_api_key": "grok-video-key-001",
+    "last_seen": "2026-09-15T21:13:30"
+  }
+]

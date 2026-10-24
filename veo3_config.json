@@ -1,0 +1,7 @@
+{
+  "bearer_token": "ya29.a0ARGnu0YE9BenWOUCtDmAuem6rrnf7Nb64Hes81wcwsh_HRTHLGUQcBC42_fDd5qUHrCaPKIbBZKAlLWsAOaS2gexONk7lPe12equNd1aSuI2zdtCPI8uH2flaud5pBAAZw5qo-AM2Z1fYz0Hfh98qkaFkS5wqdH7KKfJauMBpSuA5jcuaRzUOYboo7zKSvbPKHR1-QPVqktFbC4m-GRwtTHTuEkrDF8eM3k_TsC1vUcv22VLHWEzQRGHdJhfYVcNl3AJ530yQrM74G8X8r7tIo6rK_J4H8oZUvhHxQ8fsKXY1iiL4Z58PpjnIGBrTldN_6xhWCkeVp92BR5DlPrtfb8vS-6QSjyETwgLXWoUnemSnG0nmFwuaCgYKATMSARQSFQHGX2MiopTytl_zQ_Dyw06ynAx6SQ0379",
+  "project_id": "378bfc6c-422d-4bfb-92d1-6e978432ca7b",
+  "bridge_port": 4000,
+  "jitter_min_ms": 2000,
+  "jitter_max_ms": 5000
+}

@@ -1,0 +1,55 @@
+# ═══════════════════════════════════════════════════════
+#  CLIProxyAPI Config — GrokVideoTool
+#  Server: http://localhost:8317
+# ═══════════════════════════════════════════════════════
+
+host: "127.0.0.1"
+port: 8317
+# ─── Management Panel ──────────────────────────────────
+# Truy cập: http://localhost:8317/management
+# Dùng management key để login quản lý accounts
+remote-management:
+  allow-remote: false
+  secret-key: "$2a$10$oXCFVx44TphJCNQ6Z31OwuOU4M/CXRGQuawYEL2.rMAFH2RdEpOq6"
+  disable-control-panel: false
+  panel-github-repository: "https://github.com/router-for-me/Cli-Proxy-API-Management-Center"
+# ─── Auth Directory ────────────────────────────────────
+# Thư mục lưu auth tokens (Grok OAuth sessions)
+auth-dir: "C:\\Users\\ADMIN\\.cli-proxy-api"
+# ─── API Keys ──────────────────────────────────────────
+# Dùng key này trong GrokVideoTool (Account Manager)
+api-keys:
+  - "grok-video-key-001"
+# ─── Routing ───────────────────────────────────────────
+routing:
+  strategy: "round-robin"
+  session-affinity: false
+# ─── Retry & Cooling ──────────────────────────────────
+request-retry: 3
+max-retry-credentials: 0
+disable-cooling: false
+# ─── Video ─────────────────────────────────────────────
+video-result-auth-cache-ttl: "3h"
+# ─── Logging ───────────────────────────────────────────
+debug: false
+logging-to-file: false
+# ─── Image & Video Generation ─────────────────────────
+disable-image-generation: false
+plugins:
+  configs:
+    codex-invite:
+      enabled: false
+redis-usage-queue-retention-seconds: 60
+
+# ═══════════════════════════════════════════════════════
+#  XAI / GROK AUTH
+#  Login qua management panel hoặc thêm OAuth token files
+#  vào thư mục ~/.cli-proxy-api/
+#
+#  Cách login:
+#  1. Mở http://localhost:8317/management
+#  2. Nhập management key: grok-manage-2024
+#  3. Vào phần "Auth" → "Add xAI/Grok Account"
+#  4. Login bằng tài khoản SuperGrok
+#  5. Hoàn tất! CLIProxy sẽ tự proxy API requests
+# ═══════════════════════════════════════════════════════

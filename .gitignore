@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Archives & Backups (Exceeds GitHub 100MB limit)
+*.rar
+*.zip
+ReviewThreads*.rar
+Meme/*.zip
+Video Background/__1D1C_1.MP4
+
+# Rendered Video Outputs (Over 3GB)
+output_threads/
+
+# Browser Profiles (Local caches, sockets & locks)
+profiles/
+**/profiles/
+**/profiles/**
+native_profiles/
+**/native_profiles/
+**/native_profiles/**
+Flow_nhieu_worker_data/profiles/
+data/google_flow_threads/profiles/
+data/google_flow_threads/native_profiles/
+TiktokShop/profiles/
+
+
+# Logs and runtime locks
+*.log
+*.lock
+crash_log.txt
+gui_debug.log
+**/locks/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/

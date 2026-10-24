@@ -1,0 +1,514 @@
+[
+  [
+    "hn_female_ngochuyen_full_48k-fhg",
+    "[VBEE] HN - Ngọc Huyền (female)"
+  ],
+  [
+    "hn_female_maiphuong_vdts_48k-fhg",
+    "[VBEE] HN - Mai Phương (female)"
+  ],
+  [
+    "sg_female_lantrinh_vdts_48k-fhg",
+    "[VBEE] SG - Lan Trinh (female)"
+  ],
+  [
+    "hue_female_huonggiang_full_48k-fhg",
+    "[VBEE] Huế - Hương Giang (female)"
+  ],
+  [
+    "sg_female_thaotrinh_full_48k-fhg",
+    "[VBEE] SG - Thảo Trinh (female)"
+  ],
+  [
+    "sg_male_trungkien_vdts_48k-fhg",
+    "[VBEE] SG - Trung Kiên (male)"
+  ],
+  [
+    "hue_male_duyphuong_full_48k-fhg",
+    "[VBEE] Huế - Duy Phương (male)"
+  ],
+  [
+    "sg_male_minhhoang_full_48k-fhg",
+    "[VBEE] SG - Minh Hoàng (male)"
+  ],
+  [
+    "hn_male_manhdung_news_48k-fhg",
+    "[VBEE] HN - Mạnh Dũng (male)"
+  ],
+  [
+    "hn_male_thanhlong_talk_48k-fhg",
+    "[VBEE] HN - Thanh Long (male)"
+  ],
+  [
+    "hn_male_phuthang_news65dt_44k-fhg",
+    "[VBEE] HN - Anh Khôi (male)"
+  ],
+  [
+    "sg_female_tuongvy_call_44k-fhg",
+    "[VBEE] SG - Tường Vy (female)"
+  ],
+  [
+    "sg_female_thaotrinh_full_44k-phg",
+    "[VBEE] SG - Thảo Trinh (female)"
+  ],
+  [
+    "hn_male_manhdung_news_48k-phg",
+    "[VBEE] HN - Mạnh Dũng (male)"
+  ],
+  [
+    "hn_male_phuthang_stor80dt_48k-fhg",
+    "[VBEE] HN - Anh Khôi (male)"
+  ],
+  [
+    "hn_female_hermer_stor_48k-fhg",
+    "[VBEE] HN - Ngọc Lan (female)"
+  ],
+  [
+    "hn_female_lenka_stor_48k-phg",
+    "[VBEE] HN - Nguyệt Dương (female)"
+  ],
+  [
+    "sg_male_chidat_ebook_48k-phg",
+    "[VBEE] SG - Chí Đạt (male)"
+  ],
+  [
+    "hn_female_hachi_book_22k-vc",
+    "[VBEE] HN - Hà Chi (female)"
+  ],
+  [
+    "hn_male_vietbach_child_22k-vc",
+    "[VBEE] HN - Việt Bách (male)"
+  ],
+  [
+    "hn_female_nganha_child_22k-vc",
+    "[VBEE] HN - Ngân Hà (female)"
+  ],
+  [
+    "hn_male_minhquan_yt-stable",
+    "[VBEE] HN - Minh Quân (male)"
+  ],
+  [
+    "hn_female_ngochuyen_full_24k-st",
+    "[VBEE] Ngọc Huyền 2.0 (female)"
+  ],
+  [
+    "hn_male_manhdung_full_24k-st",
+    "[VBEE] Mạnh Dũng 2.0 (Beta) (male)"
+  ],
+  [
+    "n_hanoi_male_phanhoa_news_vc",
+    "[COMMUNITY] Phan Hoa (male)"
+  ],
+  [
+    "n_quangninh_male_beky1731913310059_children_vc",
+    "[COMMUNITY] MrK Tổng Đài (male)"
+  ],
+  [
+    "s_hochiminh_male_thanhtu1735134810116_education_vc",
+    "[COMMUNITY] Thanh Từ (male)"
+  ],
+  [
+    "s_hochiminh_male_tuanhthanh1735309885254_news_vc",
+    "[COMMUNITY] Từ Anh Thanh (male)"
+  ],
+  [
+    "n_hanoi_female_thuhuong1734671471521_story_vc",
+    "[COMMUNITY] Thu Hương HN (female)"
+  ],
+  [
+    "n_hanoi_female_vananh_book_vc",
+    "[COMMUNITY] Vân Anh HN (female)"
+  ],
+  [
+    "n_hanoi_male_quocquangcao_advertise_vc",
+    "[COMMUNITY] Quốc Quảng Cáo (male)"
+  ],
+  [
+    "n_hanoi_female_thaolinh_story_vc",
+    "[COMMUNITY] Thảo Linh (female)"
+  ],
+  [
+    "n_bacninh_male_truonggiang_education_vc",
+    "[COMMUNITY] Trường Giang (male)"
+  ],
+  [
+    "n_hanoi_female_trangcunday_news_vc",
+    "[COMMUNITY] Trang đọc tin (female)"
+  ],
+  [
+    "s_angiang_male_quangkhai_review_vc",
+    "[COMMUNITY] Quang khải (male)"
+  ],
+  [
+    "n_hanoi_female_hienhien_education_vc",
+    "[COMMUNITY] Gia Hân (female)"
+  ],
+  [
+    "s_hochiminh_male_thanhnam_story_vc",
+    "[COMMUNITY] THANH NAM (male)"
+  ],
+  [
+    "n_hanoi_female_linhlinh_review_vc",
+    "[COMMUNITY] Linh Linh (female)"
+  ],
+  [
+    "s_hochiminh_male_thanhphong_story_vc",
+    "[COMMUNITY] Thanh Phong (male)"
+  ],
+  [
+    "s_cantho_male_thanhphongcp_story_vc",
+    "[COMMUNITY] Thanh Phong CP (male)"
+  ],
+  [
+    "n_hanoi_male_nguyenanhtuants_education_vc",
+    "[COMMUNITY] Nguyễn anh tuấnTs (male)"
+  ],
+  [
+    "n_hanoi_male_bexaycopebook1_book_vc",
+    "[COMMUNITY] Daki Be Reading (male)"
+  ],
+  [
+    "s_hochiminh_female_thuybinhdoctruyn_story_vc",
+    "[COMMUNITY] Thuy Binh đọc truyện (female)"
+  ],
+  [
+    "n_hanoi_male_huutran_education_vc",
+    "[COMMUNITY] Hữu Trần (male)"
+  ],
+  [
+    "s_binhphuoc_male_huyphongbaohiem_news_vc",
+    "[COMMUNITY] Huy Phong Bảo Hiểm (male)"
+  ],
+  [
+    "c_thuathienhue_male_bsbinhminh_book_vc",
+    "[COMMUNITY] BS BINH MINH (male)"
+  ],
+  [
+    "c_thuathienhue_male_bsminh_education_vc",
+    "[COMMUNITY] BS BINH MINH Huế (male)"
+  ],
+  [
+    "n_hanoi_male_namcamo_advertise_vc",
+    "[COMMUNITY] NamCao (male)"
+  ],
+  [
+    "n_haiphong_male_ongthuong_book_vc",
+    "[COMMUNITY] Thiên Bình (male)"
+  ],
+  [
+    "s_tiengiang_male_hongvi_news_vc",
+    "[COMMUNITY] Hồng Vị (male)"
+  ],
+  [
+    "s_tiengiang_female_thuyoanh_news_vc",
+    "[COMMUNITY] Thúy Oanh (female)"
+  ],
+  [
+    "c_quangnam_male_vudaihung_news_vc",
+    "[COMMUNITY] Vũ Đại Hưng (male)"
+  ],
+  [
+    "s_bariavungtau_male_voice_advertise_vc",
+    "[COMMUNITY] Trung  MMK Auto (male)"
+  ],
+  [
+    "s_angiang_male_vanteo_news_vc",
+    "[COMMUNITY] Văn Tèo (male)"
+  ],
+  [
+    "n_hanoi_female_helensachnoi_book_vc",
+    "[COMMUNITY] Podcast chữa lành (female)"
+  ],
+  [
+    "s_vinhlong_male_nguyenquangbinh1_news_vc",
+    "[COMMUNITY] Nguyễn Quang Bình 1 (male)"
+  ],
+  [
+    "s_longan_male_lstqd_news_vc",
+    "[COMMUNITY] HN Phương Thảo (male)"
+  ],
+  [
+    "s_hochiminh_male_giongcuaquy_news_vc",
+    "[COMMUNITY] NGỌC QUÝ (male)"
+  ],
+  [
+    "s_hochiminh_male_mrnguyennews_news_vc",
+    "[COMMUNITY] Mr Nguyen News (male)"
+  ],
+  [
+    "n_hanoi_male_huongtintuc_news_vc",
+    "[COMMUNITY] Ngó Ngược Tin tức (male)"
+  ],
+  [
+    "c_thanhhoa_male_hoangkimquy_story_vc",
+    "[COMMUNITY] Hoàng Kim Quý (male)"
+  ],
+  [
+    "n_hanoi_female_nguyenphuonghd_education_vc",
+    "[COMMUNITY] Nguyễn Phương HD (female)"
+  ],
+  [
+    "n_hanoi_male_haile_advertise_vc",
+    "[COMMUNITY] Hải Lê Giọng Bắc (male)"
+  ],
+  [
+    "n_hanoi_female_mcvan_news_vc",
+    "[COMMUNITY] Mc Vân (female)"
+  ],
+  [
+    "s_baclieu_male_nguyenducluan_news_vc",
+    "[COMMUNITY] Nguyễn Đức Luân (male)"
+  ],
+  [
+    "c_thuathienhue_male_tuuanh_education_vc",
+    "[COMMUNITY] Tuu anh (male)"
+  ],
+  [
+    "s_cantho_male_gcantho_advertise_vc",
+    "[COMMUNITY] Vinh Ka Ka (male)"
+  ],
+  [
+    "n_hanoi_male_luongtk986sachnoi_book_vc",
+    "[COMMUNITY] LTKtrungbinh (male)"
+  ],
+  [
+    "n_hanoi_female_ngocbaonamson_review_vc",
+    "[COMMUNITY] Mai Vũ HN (female)"
+  ],
+  [
+    "s_thuathienhue_male_phamgia_story_vc",
+    "[COMMUNITY] Phạm Gia (male)"
+  ],
+  [
+    "c_lamdong_male_phaphy_story_vc",
+    "[COMMUNITY] Đình Tâm (male)"
+  ],
+  [
+    "s_hochiminh_female_mytran_advertise_vc",
+    "[COMMUNITY] Mỹ Trân (female)"
+  ],
+  [
+    "n_hagiang_male_trieuquang_story_vc",
+    "[COMMUNITY] Triệu Quang (male)"
+  ],
+  [
+    "n_haiphong_female_msthuy_education_vc",
+    "[COMMUNITY] MsThuy (female)"
+  ],
+  [
+    "n_hanoi_male_hugopham_education_vc",
+    "[COMMUNITY] HUGO PHAM (male)"
+  ],
+  [
+    "n_hanoi_female_huongtra_news_vc",
+    "[COMMUNITY] Hương Trà (female)"
+  ],
+  [
+    "n_hanoi_male_nguyenvo_story_vc",
+    "[COMMUNITY] Nguyên Võ (male)"
+  ],
+  [
+    "s_hochiminh_male_luulong_story_vc",
+    "[COMMUNITY] Luulong (male)"
+  ],
+  [
+    "c_lamdong_male_nguyenman_book_vc",
+    "[COMMUNITY] Nguyên Mẫn (male)"
+  ],
+  [
+    "n_thaibinh_male_trungduc_news_vc",
+    "[COMMUNITY] Trung Đức (male)"
+  ],
+  [
+    "s_lamdong_male_nhatminhblog_education_vc",
+    "[COMMUNITY] Nhật Minh Blog (male)"
+  ],
+  [
+    "n_hanoi_female_giongcualethanh_news_vc",
+    "[COMMUNITY] Giọng Lâm Bình (female)"
+  ],
+  [
+    "c_binhdinh_male_lebaohuong_education_vc",
+    "[COMMUNITY] Lê Bảo Hương (male)"
+  ],
+  [
+    "n_hanoi_male_tuantlu1_story_vc",
+    "[COMMUNITY] TuanTLU1 (male)"
+  ],
+  [
+    "n_daknong_male_langvannam_news_vc",
+    "[COMMUNITY] Kim Khôi (male)"
+  ],
+  [
+    "n_hanoi_male_trungai_book_vc",
+    "[COMMUNITY] Trung AI (male)"
+  ],
+  [
+    "n_hanoi_male_haidangdoctruyen_story_vc",
+    "[COMMUNITY] Hải Đăng Đọc Truyện (male)"
+  ],
+  [
+    "n_hanoi_male_ducnghiemtuc_education_vc",
+    "[COMMUNITY] Minh Duc Cao (male)"
+  ],
+  [
+    "s_hochiminh_male_trunghau_education_vc",
+    "[COMMUNITY] Trung Hau (male)"
+  ],
+  [
+    "s_hochiminh_male_nhattrung_story_vc",
+    "[COMMUNITY] Nhật Trung (male)"
+  ],
+  [
+    "s_hochiminh_female_thuygiang_story_vc",
+    "[COMMUNITY] Thùy Giang (female)"
+  ],
+  [
+    "c_hatinh_male_nguyenminh_news_vc",
+    "[COMMUNITY] Nguyễn Minh (male)"
+  ],
+  [
+    "n_thanhhoa_male_trainerleminh_education_vc",
+    "[COMMUNITY] Trainer Lê Minh (male)"
+  ],
+  [
+    "s_cantho_female_dthuyvy_story_vc",
+    "[COMMUNITY] DThuyVy (female)"
+  ],
+  [
+    "n_hanoi_female_thanhhuyen2_advertise_vc",
+    "[COMMUNITY] Thanh Huyền 2 (female)"
+  ],
+  [
+    "n_hanoi_male_nguyenduy92_news_vc",
+    "[COMMUNITY] Nguyễn Duy 92 (male)"
+  ],
+  [
+    "n_hanoi_female_dieuthu_book_vc",
+    "[COMMUNITY] Diệu Thu (female)"
+  ],
+  [
+    "n_hagiang_male_quangtrieu_review_vc",
+    "[COMMUNITY] Quang Triệu (male)"
+  ],
+  [
+    "n_haiduong_female_halan_advertise_vc",
+    "[COMMUNITY] Hà Lan 23 (female)"
+  ],
+  [
+    "s_hochiminh_female_giatrang_book_vc",
+    "[COMMUNITY] Gia trang (female)"
+  ],
+  [
+    "s_hochiminh_male_vanluan_story_vc",
+    "[COMMUNITY] Van Luan (male)"
+  ],
+  [
+    "s_hochiminh_male_hakieuthu_education_vc",
+    "[COMMUNITY] Hạ Kiều Thư (male)"
+  ],
+  [
+    "s_hochiminh_male_gialoc1_education_vc",
+    "[COMMUNITY] Gia Loc 1 (male)"
+  ],
+  [
+    "n_hanoi_male_vietanhpham_advertise_vc",
+    "[COMMUNITY] Việt Anh Phạm (male)"
+  ],
+  [
+    "n_hanoi_male_taothao188_review_vc",
+    "[COMMUNITY] Lê Mai Tường Vi (male)"
+  ],
+  [
+    "n_thainguyen_male_toanrecap_review_vc",
+    "[COMMUNITY] Toàn recap (male)"
+  ],
+  [
+    "n_haiduong_male_longaudio_news_vc",
+    "[COMMUNITY] Long audio (male)"
+  ],
+  [
+    "s_dongnai_male_namhung_book_vc",
+    "[COMMUNITY] Nam Hùng (male)"
+  ],
+  [
+    "s_kiengiang_male_tankg_story_vc",
+    "[COMMUNITY] Tân KG (male)"
+  ],
+  [
+    "n_haiphong_female_builanhuong_book_vc",
+    "[COMMUNITY] Bùi Lan Hương (female)"
+  ],
+  [
+    "s_hochiminh_male_anhhai_news_vc",
+    "[COMMUNITY] Anh Hai (male)"
+  ],
+  [
+    "n_hanoi_male_dhquan_advertise_vc",
+    "[COMMUNITY] Đ H Quân (male)"
+  ],
+  [
+    "n_hanoi_male_nguyencuongtrainer_advertise_vc",
+    "[COMMUNITY] Nguyễn Cường Trainer (male)"
+  ],
+  [
+    "s_hochiminh_male_hocostorepc_advertise_vc",
+    "[COMMUNITY] Giọng Hoco (male)"
+  ],
+  [
+    "c_phuyen_male_ngocbao02_news_vc",
+    "[COMMUNITY] NGỌC BẢO 02 (male)"
+  ],
+  [
+    "s_hochiminh_male_philipthong_advertise_vc",
+    "[COMMUNITY] Philip Thông (male)"
+  ],
+  [
+    "s_hochiminh_female_machvi_story_vc",
+    "[COMMUNITY] MachVi (female)"
+  ],
+  [
+    "s_binhduong_female_lillulona_book_vc",
+    "[COMMUNITY] Huyền Linh (female)"
+  ],
+  [
+    "n_hanoi_male_longpodcast_book_vc",
+    "[COMMUNITY] LongPodcast (male)"
+  ],
+  [
+    "s_hochiminh_female_fionaledieuhien_education_vc",
+    "[COMMUNITY] Fiona Le Dieu Hien (female)"
+  ],
+  [
+    "n_hanoi_female_quynhtrangdaotao_education_vc",
+    "[COMMUNITY] Quỳnh Trang đào tạo (female)"
+  ],
+  [
+    "s_hochiminh_male_bapcaitintuc_news_vc",
+    "[COMMUNITY] BAP CAI TIN TUC (male)"
+  ],
+  [
+    "s_hochiminh_male_henrypham_book_vc",
+    "[COMMUNITY] Henry Pham (male)"
+  ],
+  [
+    "s_hochiminh_male_dtlaixe_education_vc",
+    "[COMMUNITY] ĐT lái xe (male)"
+  ],
+  [
+    "n_hanoi_male_trietlygiongnam_zero_shot_book_vc",
+    "🧬 [PERSONAL] Triết lý giọng Nam (male)"
+  ],
+  [
+    "n_hanoi_male_nguoinoidaoly2_zero_shot_book_vc",
+    "🧬 [PERSONAL] Người nói đạo lý 2 (male)"
+  ],
+  [
+    "n_hanoi_male_daolyban3_zero_shot_news_vc",
+    "🧬 [PERSONAL] Đạo lý bản 3 (male)"
+  ],
+  [
+    "n_hanoi_female_hongyenclonevoice_zero_shot_news_vc",
+    "🧬 [PERSONAL] Hồng Yến Clone Voice (female)"
+  ]
+]

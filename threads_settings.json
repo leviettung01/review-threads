@@ -1,0 +1,862 @@
+{
+  "api_url": "http://127.0.0.1:8317",
+  "api_key": "grok-video-key-001",
+  "selected_role": "Đọc CMT mỹ phẩm.MD",
+  "role_skill_path": "C:\\Users\\ADMIN\\Desktop\\Python\\Veo 3 Tool\\AutoVeo3Pro_v6\\Auto_Veo_3_Pro\\Grok\\ReviewThreads\\data\\Role Skill\\Đọc CMT mỹ phẩm.MD",
+  "voice_mode": "hybrid_narrate_read",
+  "voice_mode_display": "Review kèm Đọc CMT (hybrid_narrate_read)",
+  "llm_model": "gpt-5.4",
+  "img_model": "gpt-image-2",
+  "image_quality": "1K (1024x1280 / Standard)",
+  "context": "Random Phong cách",
+  "scene_count": 8,
+  "voice_engine": "vbee",
+  "vbee_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3ODA4ODU5NDZ9.T1-ouISDREFE9v2F73b4gHOOtQYy0wXW6k11yLi5TMg",
+  "vbee_appid": "a05b2541-f9fe-491c-9bcf-3cb093c8b662",
+  "resona_key": "",
+  "el_idvn_key": "",
+  "revidapi_key": "",
+  "vbee_voice": "hn_female_ngochuyen_full_48k-fhg",
+  "vbee_speed": 1.05,
+  "vbee_sub_voices": [
+    "n_hanoi_female_nguyenphuonghd_education_vc",
+    "n_hanoi_female_vananh_book_vc",
+    "hue_female_huonggiang_full_48k-fhg",
+    "s_tiengiang_female_thuyoanh_news_vc",
+    "sg_female_thaotrinh_full_48k-fhg",
+    "n_hanoi_female_hongyenclonevoice_zero_shot_news_vc",
+    "hn_female_maiphuong_vdts_48k-fhg",
+    "sg_female_lantrinh_vdts_48k-fhg",
+    "n_hanoi_female_thaolinh_story_vc"
+  ],
+  "vbee_sub_voices_display": [
+    "n_hanoi_female_nguyenphuonghd_education_vc",
+    "n_hanoi_female_vananh_book_vc",
+    "hue_female_huonggiang_full_48k-fhg",
+    "s_tiengiang_female_thuyoanh_news_vc",
+    "sg_female_thaotrinh_full_48k-fhg",
+    "n_hanoi_female_hongyenclonevoice_zero_shot_news_vc",
+    "hn_female_maiphuong_vdts_48k-fhg",
+    "sg_female_lantrinh_vdts_48k-fhg",
+    "n_hanoi_female_thaolinh_story_vc"
+  ],
+  "bg_folder": "C:/Users/ADMIN/Desktop/Python/Veo 3 Tool/AutoVeo3Pro_v6/Auto_Veo_3_Pro/Grok/ReviewThreads/Video Background",
+  "no_duplicate_bg": true,
+  "fake_metadata": true,
+  "anti_flip_h": true,
+  "anti_noise": true,
+  "delay_sec": 5,
+  "retry_count": 1,
+  "concurrency": 8,
+  "burst_size": 4,
+  "burst_delay": 5,
+  "upscale_threads": 1,
+  "llm_threads": 5,
+  "img_threads": 8,
+  "vid_threads": 6,
+  "pipeline_delay": 5,
+  "veo_bearer": "ya29.a0ARGnu0YE9BenWOUCtDmAuem6rrnf7Nb64Hes81wcwsh_HRTHLGUQcBC42_fDd5qUHrCaPKIbBZKAlLWsAOaS2gexONk7lPe12equNd1aSuI2zdtCPI8uH2flaud5pBAAZw5qo-AM2Z1fYz0Hfh98qkaFkS5wqdH7KKfJauMBpSuA5jcuaRzUOYboo7zKSvbPKHR1-QPVqktFbC4m-GRwtTHTuEkrDF8eM3k_TsC1vUcv22VLHWEzQRGHdJhfYVcNl3AJ530yQrM74G8X8r7tIo6rK_J4H8oZUvhHxQ8fsKXY1iiL4Z58PpjnIGBrTldN_6xhWCkeVp92BR5DlPrtfb8vS-6QSjyETwgLXWoUnemSnG0nmFwuaCgYKATMSARQSFQHGX2MiopTytl_zQ_Dyw06ynAx6SQ0379",
+  "veo_project_id": "378bfc6c-422d-4bfb-92d1-6e978432ca7b",
+  "veo_secret": "ff065320a43b73b8959756fac4830553c1ee664bb7762411466f2532edc2e694",
+  "veo_bridge_port": 4000,
+  "vr_enabled": true,
+  "vr_mode": "ai_generate",
+  "vr_video_model": "Omni Flash",
+  "vr_resolution": "720p",
+  "vr_role_skill": "Video AI Mỹ Phẩm.MD",
+  "vr_scene_count": 2,
+  "vr_clip_duration": 10,
+  "vr_aspect_ratio": "9:16",
+  "vr_external_path": "",
+  "vr_crop_mode": "keep_original",
+  "vr_speed": 1.4,
+  "vr_auto_speed": true,
+  "vr_max_duration": 30,
+  "vr_zoom_custom": true,
+  "vr_zoom_factor": 90.0,
+  "vr_overlay_bg": true,
+  "vr_overlay_scale": 85,
+  "vr_keep_audio": false,
+  "vr_flip_h": false,
+  "vr_noise": false,
+  "vr_random_cut": false,
+  "vr_rcut_interval_min": 3,
+  "vr_rcut_interval_max": 5,
+  "output_dir": "C:\\Users\\ADMIN\\Desktop\\Python\\Veo 3 Tool\\AutoVeo3Pro_v6\\Auto_Veo_3_Pro\\Grok\\ReviewThreads\\output_threads",
+  "vbee_voices_cached": [
+    [
+      "hn_female_ngochuyen_full_48k-fhg",
+      "👩 HN - Ngọc Huyền · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "hn_female_maiphuong_vdts_48k-fhg",
+      "👩 HN - Mai Phương · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "sg_female_lantrinh_vdts_48k-fhg",
+      "👩 SG - Lan Trinh · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "hue_female_huonggiang_full_48k-fhg",
+      "👩 Huế - Hương Giang · Miền Trung [VBEE]",
+      "female",
+      "Miền Trung"
+    ],
+    [
+      "sg_female_thaotrinh_full_48k-fhg",
+      "👩 SG - Thảo Trinh · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "sg_male_trungkien_vdts_48k-fhg",
+      "👨 SG - Trung Kiên · Miền Trung [VBEE]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "hue_male_duyphuong_full_48k-fhg",
+      "👨 Huế - Duy Phương · Miền Trung [VBEE]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "sg_male_minhhoang_full_48k-fhg",
+      "👨 SG - Minh Hoàng · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_male_manhdung_news_48k-fhg",
+      "👨 HN - Mạnh Dũng · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_male_thanhlong_talk_48k-fhg",
+      "👨 HN - Thanh Long · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_male_phuthang_news65dt_44k-fhg",
+      "👨 HN - Anh Khôi · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "sg_female_tuongvy_call_44k-fhg",
+      "👩 SG - Tường Vy · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "sg_female_thaotrinh_full_44k-phg",
+      "👩 SG - Thảo Trinh · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "hn_male_manhdung_news_48k-phg",
+      "👨 HN - Mạnh Dũng · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_male_phuthang_stor80dt_48k-fhg",
+      "👨 HN - Anh Khôi · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_female_hermer_stor_48k-fhg",
+      "👩 HN - Ngọc Lan · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "hn_female_lenka_stor_48k-phg",
+      "👩 HN - Nguyệt Dương · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "sg_male_chidat_ebook_48k-phg",
+      "👨 SG - Chí Đạt · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_female_hachi_book_22k-vc",
+      "👩 HN - Hà Chi · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "hn_male_vietbach_child_22k-vc",
+      "👨 HN - Việt Bách · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_female_nganha_child_22k-vc",
+      "👩 HN - Ngân Hà · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "hn_male_minhquan_yt-stable",
+      "👨 HN - Minh Quân · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_female_ngochuyen_full_24k-st",
+      "👩 Ngọc Huyền 2.0 · Khác [VBEE]",
+      "female",
+      "Khác"
+    ],
+    [
+      "hn_male_manhdung_full_24k-st",
+      "👨 Mạnh Dũng 2.0 (Beta) · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "hn_male_minhquan_yt_24k-pre",
+      "👨 Minh Quân Pro (Beta) · Khác [VBEE]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_phanhoa_news_vc",
+      "👨 Phan Hoa · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_quangninh_male_beky1731913310059_children_vc",
+      "👨 MrK Tổng Đài · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_thanhtu1735134810116_education_vc",
+      "👨 Thanh Từ · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_tuanhthanh1735309885254_news_vc",
+      "👨 Từ Anh Thanh · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_female_thuhuong1734671471521_story_vc",
+      "👩 Thu Hương HN · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_vananh_book_vc",
+      "👩 Vân Anh HN · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_quocquangcao_advertise_vc",
+      "👨 Quốc Quảng Cáo · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_thaolinh_story_vc",
+      "👩 Thảo Linh · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "n_bacninh_male_truonggiang_education_vc",
+      "👨 Trường Giang · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_trangcunday_news_vc",
+      "👩 Trang đọc tin · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "s_angiang_male_quangkhai_review_vc",
+      "👨 Quang khải · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_female_hienhien_education_vc",
+      "👩 Gia Hân · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "s_hochiminh_male_thanhnam_story_vc",
+      "👨 THANH NAM · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_female_linhlinh_review_vc",
+      "👩 Linh Linh · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "s_hochiminh_male_thanhphong_story_vc",
+      "👨 Thanh Phong · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_cantho_male_thanhphongcp_story_vc",
+      "👨 Thanh Phong CP · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_nguyenanhtuants_education_vc",
+      "👨 Nguyễn anh tuấnTs · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "c_nghean_male_hothu_story_vc",
+      "👨 HoThu · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_bexaycopebook1_book_vc",
+      "👨 Daki Be Reading · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "s_hochiminh_female_thuybinhdoctruyn_story_vc",
+      "👩 Thuy Binh đọc truyện · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_huutran_education_vc",
+      "👨 Hữu Trần · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "s_binhphuoc_male_huyphongbaohiem_news_vc",
+      "👨 Huy Phong Bảo Hiểm · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "c_thuathienhue_male_bsbinhminh_book_vc",
+      "👨 BS BINH MINH · Miền Trung [Cộng đồng]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "c_thuathienhue_male_bsminh_education_vc",
+      "👨 BS BINH MINH Huế · Miền Trung [Cộng đồng]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "n_hanoi_male_namcamo_advertise_vc",
+      "👨 NamCao · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_dochidung_book_vc",
+      "👨 Dũng Dễ Dãi · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_haiphong_male_ongthuong_book_vc",
+      "👨 Thiên Bình · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_tiengiang_male_hongvi_news_vc",
+      "👨 Hồng Vị · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_tiengiang_female_thuyoanh_news_vc",
+      "👩 Thúy Oanh · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "c_quangnam_male_vudaihung_news_vc",
+      "👨 Vũ Đại Hưng · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_bariavungtau_male_voice_advertise_vc",
+      "👨 Trung  MMK Auto · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_angiang_male_vanteo_news_vc",
+      "👨 Văn Tèo · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_female_helensachnoi_book_vc",
+      "👩 Podcast chữa lành · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "s_vinhlong_male_nguyenquangbinh1_news_vc",
+      "👨 Nguyễn Quang Bình 1 · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_longan_male_lstqd_news_vc",
+      "👨 HN Phương Thảo · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_giongcuaquy_news_vc",
+      "👨 NGỌC QUÝ · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_mrnguyennews_news_vc",
+      "👨 Mr Nguyen News · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_huongtintuc_news_vc",
+      "👨 Ngó Ngược Tin tức · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "c_thanhhoa_male_hoangkimquy_story_vc",
+      "👨 Hoàng Kim Quý · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_female_nguyenphuonghd_education_vc",
+      "👩 Nguyễn Phương HD · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_haile_advertise_vc",
+      "👨 Hải Lê Giọng Bắc · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_mcvan_news_vc",
+      "👩 Mc Vân · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "s_baclieu_male_nguyenducluan_news_vc",
+      "👨 Nguyễn Đức Luân · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "c_thuathienhue_male_tuuanh_education_vc",
+      "👨 Tuu anh · Miền Trung [Cộng đồng]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "s_cantho_male_gcantho_advertise_vc",
+      "👨 Vinh Ka Ka · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_luongtk986sachnoi_book_vc",
+      "👨 LTKtrungbinh · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_ngocbaonamson_review_vc",
+      "👩 Mai Vũ HN · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "s_thuathienhue_male_phamgia_story_vc",
+      "👨 Phạm Gia · Miền Trung [Cộng đồng]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "c_lamdong_male_phaphy_story_vc",
+      "👨 Đình Tâm · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_female_mytran_advertise_vc",
+      "👩 Mỹ Trân · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "n_hagiang_male_trieuquang_story_vc",
+      "👨 Triệu Quang · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_haiphong_female_msthuy_education_vc",
+      "👩 MsThuy · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_hugopham_education_vc",
+      "👨 HUGO PHAM · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_huongtra_news_vc",
+      "👩 Hương Trà · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_nguyenvo_story_vc",
+      "👨 Nguyên Võ · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "s_hochiminh_male_luulong_story_vc",
+      "👨 Luulong · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "c_lamdong_male_nguyenman_book_vc",
+      "👨 Nguyên Mẫn · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_thaibinh_male_trungduc_news_vc",
+      "👨 Trung Đức · Miền Trung [Cộng đồng]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "s_lamdong_male_nhatminhblog_education_vc",
+      "👨 Nhật Minh Blog · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_female_giongcualethanh_news_vc",
+      "👩 Giọng Lâm Bình · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "c_binhdinh_male_lebaohuong_education_vc",
+      "👨 Lê Bảo Hương · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_tuantlu1_story_vc",
+      "👨 TuanTLU1 · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_daknong_male_langvannam_news_vc",
+      "👨 Kim Khôi · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_trungai_book_vc",
+      "👨 Trung AI · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_haidangdoctruyen_story_vc",
+      "👨 Hải Đăng Đọc Truyện · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_ducnghiemtuc_education_vc",
+      "👨 Minh Duc Cao · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "s_hochiminh_male_trunghau_education_vc",
+      "👨 Trung Hau · Miền Trung [Cộng đồng]",
+      "male",
+      "Miền Trung"
+    ],
+    [
+      "s_hochiminh_male_nhattrung_story_vc",
+      "👨 Nhật Trung · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_female_thuygiang_story_vc",
+      "👩 Thùy Giang · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "c_hatinh_male_nguyenminh_news_vc",
+      "👨 Nguyễn Minh · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_thanhhoa_male_trainerleminh_education_vc",
+      "👨 Trainer Lê Minh · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_cantho_female_dthuyvy_story_vc",
+      "👩 DThuyVy · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "n_hanoi_female_thanhhuyen2_advertise_vc",
+      "👩 Thanh Huyền 2 · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_nguyenduy92_news_vc",
+      "👨 Nguyễn Duy 92 · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_dieuthu_book_vc",
+      "👩 Diệu Thu · Miền Bắc [Cộng đồng]",
+      "female",
+      "Miền Bắc"
+    ],
+    [
+      "n_hagiang_male_quangtrieu_review_vc",
+      "👨 Quang Triệu · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_camau_male_thanhtrieumina_book_vc",
+      "👨 Thanh Triệu Speaker · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_haiduong_female_halan_advertise_vc",
+      "👩 Hà Lan 23 · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_female_giatrang_book_vc",
+      "👩 Gia trang · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_vanluan_story_vc",
+      "👨 Van Luan · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_thanhtrieuread_story_vc",
+      "👨 Thanh Triệu Reader · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_hakieuthu_education_vc",
+      "👨 Hạ Kiều Thư · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_gialoc1_education_vc",
+      "👨 Gia Loc 1 · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_vietanhpham_advertise_vc",
+      "👨 Việt Anh Phạm · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_taothao188_review_vc",
+      "👨 Lê Mai Tường Vi · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_thainguyen_male_toanrecap_review_vc",
+      "👨 Toàn recap · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_haiduong_male_longaudio_news_vc",
+      "👨 Long audio · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_dongnai_male_namhung_book_vc",
+      "👨 Nam Hùng · Miền Nam [Cộng đồng]",
+      "male",
+      "Miền Nam"
+    ],
+    [
+      "s_kiengiang_male_tankg_story_vc",
+      "👨 Tân KG · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_haiphong_female_builanhuong_book_vc",
+      "👩 Bùi Lan Hương · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_anhhai_news_vc",
+      "👨 Anh Hai · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_dhquan_advertise_vc",
+      "👨 Đ H Quân · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_nguyencuongtrainer_advertise_vc",
+      "👨 Nguyễn Cường Trainer · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "s_hochiminh_male_hocostorepc_advertise_vc",
+      "👨 Giọng Hoco · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "c_phuyen_male_ngocbao02_news_vc",
+      "👨 NGỌC BẢO 02 · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_male_philipthong_advertise_vc",
+      "👨 Philip Thông · Khác [Cộng đồng]",
+      "male",
+      "Khác"
+    ],
+    [
+      "s_hochiminh_female_machvi_story_vc",
+      "👩 MachVi · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "s_binhduong_female_lillulona_book_vc",
+      "👩 Huyền Linh · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_longpodcast_book_vc",
+      "👨 LongPodcast · Miền Bắc [Cộng đồng]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "s_hochiminh_female_fionaledieuhien_education_vc",
+      "👩 Fiona Le Dieu Hien · Khác [Cộng đồng]",
+      "female",
+      "Khác"
+    ],
+    [
+      "n_hanoi_male_trietlygiongnam_zero_shot_book_vc",
+      "🧬 👨 Triết lý giọng Nam · Miền Bắc [Cá nhân]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_nguoinoidaoly2_zero_shot_book_vc",
+      "🧬 👨 Người nói đạo lý 2 · Miền Bắc [Cá nhân]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_male_daolyban3_zero_shot_news_vc",
+      "🧬 👨 Đạo lý bản 3 · Miền Bắc [Cá nhân]",
+      "male",
+      "Miền Bắc"
+    ],
+    [
+      "n_hanoi_female_hongyenclonevoice_zero_shot_news_vc",
+      "🧬 👩 Hồng Yến Clone Voice · Miền Bắc [Cá nhân]",
+      "female",
+      "Miền Bắc"
+    ]
+  ]
+}

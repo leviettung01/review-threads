@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Local CLIProxy (Default)",
+    "proxy_url": "http://127.0.0.1:8317",
+    "api_key": "grok-video-key-001",
+    "active": true,
+    "jobs_done": 0,
+    "tag": "Pro"
+  }
+]

@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Threads - ReviewThreads Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="app-layout">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar">
+      <div class="sidebar-logo-area">
+        <div class="sidebar-logo-title">
+          <span class="logo-icon-img">🎬</span>
+          <div>
+            <h1>Auto Threads</h1>
+            <p>ReviewThreads Studio • Tự Động Hoá</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-menu">
+        <button class="nav-btn active" data-tab="dashboard">
+          <span class="btn-icon">🏠</span> Dashboard
+        </button>
+
+        <div class="sidebar-section-title">DỰ ÁN</div>
+        
+        <button id="btnSidebarNewProject" class="btn-sub-action">+ Tạo Dự Án Mới</button>
+
+        <div id="sidebarProjectsList" class="sidebar-projects-list">
+          <!-- Populated by JS -->
+        </div>
+
+        <button class="nav-btn" data-tab="studio" style="margin-top: 8px;">
+          <span class="btn-icon">🎬</span> Studio
+        </button>
+
+        <div class="sidebar-section-title" style="margin-top: 16px;">QUẢN LÝ</div>
+
+        <button class="nav-btn" data-tab="tiktokshop">
+          <span class="btn-icon">🛍️</span> TikTok Shop Spy
+        </button>
+
+        <button class="nav-btn" data-tab="accounts">
+          <span class="btn-icon">🔑</span> Quản Lý Tài Khoản
+        </button>
+
+        <button class="nav-btn" data-tab="settings">
+          <span class="btn-icon">⚙️</span> Cài Đặt
+        </button>
+      </div>
+
+      <div class="sidebar-footer">
+        <span class="footer-account-count" id="lblSidebarAccCount">👥 8 tài khoản hoạt động</span>
+      </div>
+    </aside>
+
+    <!-- RIGHT MAIN WORKSPACE -->
+    <div class="right-content">
+      
+      <!-- PAGE 1: DASHBOARD -->
+      <section id="pageDashboard" class="page-view active">
+        <header class="page-header">
+          <div class="header-title-box">
+            <h2>🏠 Dashboard</h2>
+            <p>Quản lý dự án tạo video AI</p>
+          </div>
+          <div class="header-right-btns">
+            <button id="btnOpenRoleSkillGlobal" class="btn btn-orange">🍊 Quản Lý Role Skill</button>
+            <button id="btnDashCreateProj" class="btn btn-purple">+ Tạo Dự Án Mới</button>
+          </div>
+        </header>
+
+        <div class="dashboard-body">
+          <div id="dashProjectsGrid" class="dash-grid">
+            <!-- Project Cards -->
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 2: STUDIO WORKSPACE -->
+      <section id="pageStudio" class="page-view">
+        <header class="studio-top-bar">
+          <div class="studio-top-left">
+            <button id="btnBackToDashboard" class="btn btn-indigo">⬅ Quay lại Dashboard</button>
+            <h3 id="studioHeaderTitle" class="studio-project-title">🎭 Role Skill Pipeline — Chưa chọn dự án</h3>
+          </div>
+
+          <div class="studio-top-right">
+            <span id="lblHeaderRoleBadge" class="role-badge">Role: [RoleSkill.MD]</span>
+            <button id="btnAddRoleSkill" class="btn btn-emerald btn-sm">➕ Thêm Role</button>
+            <button id="btnEditRoleMD" class="btn btn-outline-purple btn-sm">📝 Sửa Role MD</button>
+            <button id="btnDelRoleSkill" class="btn btn-red btn-sm">🗑️ Xóa Role</button>
+          </div>
+        </header>
+
+        <div class="studio-split-body">
+          <!-- Left Studio Config Panel -->
+          <div class="studio-config-pane">
+            
+            <!-- CARD 1: SẢN PHẨM & CHẠY TỰ ĐỘNG -->
+            <div class="card config-card">
+              <div class="card-header">
+                <h3>📦 SẢN PHẨM & CHẠY TỰ ĐỘNG</h3>
+              </div>
+              <div class="form-row margin-bottom">
+                <button id="btnAddProduct" class="btn btn-purple flex-1">➕ Thêm ảnh SP</button>
+                <button id="btnStudioTiktokShop" class="btn btn-secondary flex-1">🛍️ TiktokShop</button>
+              </div>
+              <div class="form-row margin-bottom">
+                <button id="btnStartPipeline" class="btn btn-success flex-1">▶️ Bắt đầu</button>
+                <button id="btnPausePipeline" class="btn btn-cyan flex-1" disabled>⏸️ Tạm dừng</button>
+              </div>
+              <div class="form-row">
+                <button id="btnDelLastProduct" class="btn btn-danger-soft flex-1 btn-sm">🗑️ Xóa SP cuối</button>
+                <button id="btnDelAllProducts" class="btn btn-red flex-1 btn-sm">🗑️ Xóa tất cả</button>
+              </div>
+            </div>
+
+            <!-- CARD 2: CẤU HÌNH MODEL AI & LUỒNG VEO3 -->
+            <div class="card config-card">
+              <div class="card-header">
+                <h3>🤖 CẤU HÌNH MODEL AI & LUỒNG VEO3</h3>
+              </div>
+              
+              <div class="form-group">
+                <div class="label-with-action">
+                  <label>🎭 Role Skill (Kịch Bản Mẫu):</label>
+                  <button id="btnOpenRoleEditor" class="btn-text">📝 Chỉnh Sửa Data</button>
+                </div>
+                <select id="roleSkillSelect" class="custom-select"></select>
+              </div>
+
+              <div class="form-group">
+                <label>LLM Model (Biên Kịch):</label>
+                <select id="llmModelSelect" class="custom-select"></select>
+              </div>
+
+              <div class="form-group">
+                <label>🎙️ Chế Độ Voiceover (Voice Mode):</label>
+                <select id="voiceModeSelect" class="custom-select">
+                  <option value="narrative_review">Review dẫn chuyện (narrative_review)</option>
+                  <option value="verbatim_read">Đọc nguyên văn (verbatim_read)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Ảnh AI Model (Threads UI):</label>
+                <select id="imgModelSelect" class="custom-select"></select>
+              </div>
+
+              <div class="form-group">
+                <label>🖼️ Chất Lượng Ảnh (Resolution):</label>
+                <select id="imgQualitySelect" class="custom-select">
+                  <option value="1K (1024x1280 / Standard)">1K (1024x1280 / Standard)</option>
+                  <option value="2K (2048x2560 / Ultra HD)">2K (2048x2560 / Ultra HD)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Bối cảnh Context:</label>
+                <select id="contextSelect" class="custom-select">
+                  <option value="Bối cảnh theo Role Skill">Bối cảnh theo Role Skill</option>
+                  <option value="Cửa hàng ăn vặt HN">Cửa hàng ăn vặt HN</option>
+                  <option value="Góc học tập GenZ">Góc học tập GenZ</option>
+                  <option value="Phòng ngủ tối giản Hàn Quốc">Phòng ngủ tối giản Hàn Quốc</option>
+                </select>
+              </div>
+
+              <div class="form-row margin-bottom">
+                <div class="form-group half">
+                  <label>⚡ Số luồng song song:</label>
+                  <input type="number" id="concurrencyInput" class="custom-input" min="1" max="16" value="8">
+                </div>
+                <div class="form-group half">
+                  <label>⏳ Nghỉ sau đợt (s):</label>
+                  <input type="number" id="burstDelayInput" class="custom-input" min="1" max="60" value="10">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group half">
+                  <label>📸 Số ảnh mỗi đợt (Burst):</label>
+                  <input type="number" id="burstSizeInput" class="custom-input" min="1" max="8" value="4">
+                </div>
+                <div class="form-group half">
+                  <label>🔍 Luồng Upscale ảnh:</label>
+                  <input type="number" id="upscaleThreadsInput" class="custom-input" min="1" max="4" value="1">
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3: CẤU HÌNH VOICE & PHẦN CẢNH -->
+            <div class="card config-card">
+              <div class="card-header">
+                <h3>🎙️ CẤU HÌNH VOICE & PHẦN CẢNH</h3>
+              </div>
+              <div class="form-group">
+                <label>Engine Voiceover:</label>
+                <select id="voiceEngineSelect" class="custom-select">
+                  <option value="gtts">gTTS Tiếng Việt</option>
+                  <option value="vbee">Vbee API</option>
+                </select>
+              </div>
+
+              <div id="vbeeCredentialsGroup" class="vbee-group">
+                <div class="form-group">
+                  <label>Token:</label>
+                  <input type="password" id="vbeeTokenInput" class="custom-input" placeholder="Bearer Token...">
+                </div>
+                <div class="form-group">
+                  <label>App-ID:</label>
+                  <input type="text" id="vbeeAppIdInput" class="custom-input" placeholder="App-ID...">
+                </div>
+                <div class="form-group">
+                  <div class="label-with-action">
+                    <label>Voice Code (Giọng đọc):</label>
+                    <button id="btnFetchVbeeVoices" class="btn-text" type="button">🔄 Load Voice</button>
+                  </div>
+                  <select id="vbeeVoiceSelect" class="custom-select"></select>
+                  <input type="hidden" id="vbeeVoiceCodeInput" value="vi_south_female_miien_48k">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Số Phân cảnh:</label>
+                <input type="number" id="sceneCountInput" class="custom-input" min="2" max="15" value="8">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group half">
+                  <label>Delay(s):</label>
+                  <input type="number" id="delaySecInput" class="custom-input" min="1" max="30" value="5">
+                </div>
+                <div class="form-group half">
+                  <label>Retry:</label>
+                  <input type="number" id="retryCountInput" class="custom-input" min="1" max="10" value="5">
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4: EDIT & VIDEO BACKGROUND -->
+            <div class="card config-card">
+              <div class="card-header">
+                <h3>🎬 EDIT & VIDEO BACKGROUND</h3>
+              </div>
+              <div class="form-group">
+                <label>Thư mục BG Nguồn:</label>
+                <div class="form-row">
+                  <input type="text" id="settingBgFolder" class="custom-input flex-1" value="Pro/Grok/ReviewThreads/Video Background">
+                  <button id="btnBrowseBg" class="btn btn-secondary" style="width: 36px;">📂</button>
+                </div>
+              </div>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" id="chkNoDupBg" checked> 🎲 Random không trùng</label>
+                <label class="checkbox-label"><input type="checkbox" id="chkFakeMeta" checked> 🛡️ Fake Metadata</label>
+                <label class="checkbox-label"><input type="checkbox" id="chkFlipH"> ↔️ Flip H</label>
+                <label class="checkbox-label"><input type="checkbox" id="chkNoise" checked> ✨ Noise/Color Shift</label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Products Pane -->
+          <div class="studio-products-pane">
+            <div id="productsListContainer" class="products-list-container">
+              <!-- Products & Scenes -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 3: TIKTOK SHOP SPY -->
+      <section id="pageTiktokshop" class="page-view">
+        <div class="page-padding tt-page-wrapper">
+          
+          <div class="tt-top-status-bar">
+            <span class="tt-status-text">☑ Chrome Spy đang HOẠT ĐỘNG (CDP Port 9222 active)</span>
+            <button class="btn btn-emerald">🌐 MỞ CHROME SPY</button>
+          </div>
+
+          <div class="tt-top-split">
+            <div class="card tt-links-card">
+              <label class="card-title-lbl">Danh sách liên kết sản phẩm (mỗi link trên 1 dòng)</label>
+              <textarea class="custom-input tt-links-textarea" placeholder="Dán danh sách các link sản phẩm TikTok Shop vào đây (mỗi link trên 1 dòng)..."></textarea>
+              <div class="tt-links-footer">
+                <button class="btn btn-indigo">📂 Chọn file chứa Links</button>
+                <span class="text-muted">Chưa chọn file</span>
+              </div>
+            </div>
+
+            <div class="card tt-config-card">
+              <div class="card-header">
+                <h3>Cấu hình Crawl</h3>
+              </div>
+              <div class="form-group">
+                <label>Số luồng:</label>
+                <input type="number" class="custom-input" value="2" min="1" max="10">
+              </div>
+              <button class="btn btn-purple btn-crawl-start margin-bottom">🚀 BẮT ĐẦU CRAWL</button>
+              <button class="btn btn-red btn-crawl-stop">🛑 DỪNG CRAWL</button>
+              
+              <div class="form-group margin-top">
+                <label>Thư mục lưu trữ:</label>
+                <button class="btn btn-secondary btn-full">📁 Mở thư mục sản phẩm</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tt-bottom-split">
+            <div class="tt-catalog-pane">
+              <div class="tt-filter-bar">
+                <label>Thư mục phân loại:</label>
+                <select class="custom-select" style="width: 160px;">
+                  <option>Tất cả thư mục</option>
+                </select>
+                <button class="btn btn-secondary">Phân loại...</button>
+                <button class="btn btn-cyan">🔄 Làm mới</button>
+              </div>
+
+              <div class="tt-quick-voice-bar">
+                <input type="text" class="custom-input flex-1" placeholder="Dán link video TikTok để tải voice (tuỳ chọn)...">
+                <button class="btn btn-indigo">📥 Tải Voice</button>
+                <button class="btn btn-indigo">📥 Tải Voice Tất Cả</button>
+                <button class="btn btn-emerald">➕ Thêm vào Dự Án</button>
+              </div>
+
+              <div class="tt-table-container">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 30px;">#</th>
+                      <th style="width: 140px;">ID Sản phẩm</th>
+                      <th>Tiêu đề</th>
+                      <th style="width: 80px;">Giá</th>
+                      <th style="width: 110px;">Shop/Cửa hàng</th>
+                      <th style="width: 90px;">Trạng thái</th>
+                      <th style="width: 100px;">🗣️ Voice MP3</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ttProductsTbodyMain">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tt-logs-pane">
+              <div class="log-title" style="margin-bottom: 6px;">Nhật ký tiến trình</div>
+              <div class="tt-logs-body" id="ttCrawlLogBody"></div>
+              <div class="tt-crawl-progress">
+                <span>Đã cào: 0/0 | Thành công: 0 | Thất bại: 0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 4: ACCOUNT MANAGER -->
+      <section id="pageAccounts" class="page-view">
+        <header class="page-header">
+          <div class="header-title-box">
+            <h2>👥 Account Manager (Tài khoản)</h2>
+            <p id="lblAccsSubHeader">Quản lý tài khoản đăng nhập Grok, Codex và Google Veo3</p>
+          </div>
+        </header>
+
+        <div class="page-padding acc-layout-split">
+          <div class="acc-left-col">
+            <div class="card acc-login-card">
+              <div class="card-header">
+                <h3>⚡ ĐĂNG NHẬP BẰNG TRÌNH DUYỆT (CLI-PROXY API)</h3>
+              </div>
+              
+              <div class="form-group margin-bottom">
+                <label style="font-weight: bold; font-size: 11px;">Loại tài khoản đăng nhập:</label>
+                <select id="accLoginTypeSelect" class="custom-select">
+                  <option value="xAI Grok (SuperGrok)">xAI Grok (SuperGrok)</option>
+                  <option value="OpenAI Codex">OpenAI Codex</option>
+                  <option value="Google Flow / Veo 3">Google Flow / Veo 3</option>
+                </select>
+              </div>
+
+              <button id="btnOpenWebAdmin" class="btn btn-cyan btn-full margin-bottom">🌐 Mở Web Admin (Port 8317)</button>
+              <button id="btnLoginBrowser" class="btn btn-purple btn-full margin-bottom">🔑 Login Qua Trình Duyệt</button>
+              <button id="btnSyncCliproxy" class="btn btn-emerald btn-full">🔄 Đồng Bộ CLIproxy</button>
+              <p class="text-sub-info margin-top">Mở trình duyệt sạch tự động dọn cache để đăng nhập OAuth2.</p>
+            </div>
+
+            <div class="card acc-add-card">
+              <div class="card-header">
+                <h3>➕ Thêm Tài Khoản Thủ Công</h3>
+              </div>
+              <div class="form-group">
+                <input type="text" id="accManualName" class="custom-input" placeholder="Tên / Email tài khoản...">
+              </div>
+              <div class="form-group">
+                <input type="text" id="accManualProxy" class="custom-input" placeholder="Proxy URL hoặc GCP Project ID...">
+              </div>
+              <div class="form-group">
+                <input type="text" id="accManualKey" class="custom-input" placeholder="API Key hoặc Bearer Token...">
+              </div>
+              <button id="btnAddAccManual" class="btn btn-purple btn-full">➕ Thêm Vào Danh Sách</button>
+            </div>
+          </div>
+
+          <div class="acc-right-col">
+            <div class="card acc-list-card">
+              <div class="acc-list-header">
+                <span class="acc-list-title" id="lblAccListTitle">👥 DANH SÁCH TÀI KHOẢN (8 tài khoản)</span>
+                <button id="btnCheckTokens" class="btn btn-cyan btn-sm">🔍 Kiểm tra tất cả Token</button>
+              </div>
+
+              <div id="accListContainer" class="acc-list-container">
+                <!-- Account cards -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 5: SETTINGS -->
+      <section id="pageSettings" class="page-view">
+        <header class="page-header">
+          <div class="header-title-box">
+            <h2>⚙️ Settings (Cấu Hình)</h2>
+          </div>
+        </header>
+
+        <div class="page-padding settings-body">
+          
+          <div class="card settings-card">
+            <div class="card-header">
+              <h3>📁 THƯ MỤC LƯU MẶC ĐỊNH</h3>
+            </div>
+            <div class="form-row">
+              <input type="text" id="settingOutputDir" class="custom-input flex-1" value="C:\Users\ADMIN\Desktop\Python\Veo 3 Tool\AutoVeo3Pro_v6\Auto_Veo_3_Pro\Grok\ReviewThreads\output_threads">
+              <button class="btn btn-secondary" style="width: 36px;">📁</button>
+            </div>
+          </div>
+
+          <div class="card settings-card">
+            <div class="card-header">
+              <h3>⚙️ THÔNG SỐ XỬ LÝ HỆ THỐNG</h3>
+            </div>
+            <div class="form-group">
+              <label>⏱️ Tần suất kiểm tra (giây):</label>
+              <input type="number" class="custom-input" value="5">
+            </div>
+            <div class="form-group">
+              <label>⏳ Thời gian chờ tối đa (giây):</label>
+              <input type="number" class="custom-input" value="900">
+            </div>
+            <div class="form-group">
+              <label>🔁 Số lần thử lại lỗi:</label>
+              <input type="number" class="custom-input" value="5">
+            </div>
+            <div class="form-group">
+              <label>⚡ Số luồng chạy song song:</label>
+              <input type="number" class="custom-input" value="3">
+            </div>
+          </div>
+
+          <div class="card settings-card">
+            <div class="card-header">
+              <h3>🔧 CẤU HÌNH VEO 3 / BANANA (GOOGLE LABS FLOW)</h3>
+            </div>
+            <div class="info-blue-box">
+              <p>ℹ Token & Project ID được tự động lấy từ tài khoản Google đã đăng nhập.</p>
+              <p>ℹ Vào tab 'Quản Lý Tài Khoản' -> nhấn '🔑 Login Qua Trình Duyệt' -> chọn 'Google Flow / Veo 3' để đăng nhập.</p>
+            </div>
+
+            <div class="form-group margin-top">
+              <label>Cổng Bridge (Default 4000):</label>
+              <input type="number" class="custom-input" value="4000">
+            </div>
+            <div class="form-group">
+              <label>Bridge Secret (cho Extension):</label>
+              <input type="text" class="custom-input" value="ff065320e43b73b3959758fac4830553c1ee864bb7762411400f2532edc2e694">
+            </div>
+            <div class="form-group">
+              <label>Jitter Min (ms, mặc định 2000):</label>
+              <input type="number" class="custom-input" value="2000">
+            </div>
+            <div class="form-group">
+              <label>Jitter Max (ms, mặc định 5000):</label>
+              <input type="number" class="custom-input" value="5000">
+            </div>
+            <div class="green-status-bar">
+              🟩 2 tài khoản Google đã đăng nhập
+            </div>
+          </div>
+
+          <div class="card settings-card">
+            <div class="card-header">
+              <h3>🛡️ CHỐNG PHÁT HIỆN (ANTI-DETECT)</h3>
+            </div>
+            <p class="text-sub-info">Các tuỳ chọn bên dưới tự động áp dụng vào video xuất ra, giúp tránh bị phát hiện trùng lặp.</p>
+            <div class="form-group margin-top">
+              <label class="checkbox-label" style="font-size: 11px; font-weight: 700;">
+                <input type="checkbox" id="settingFakeMeta" checked> Fake Metadata (Chỉ để metadata video gốc như camera, ngày tạo, GPS)
+              </label>
+            </div>
+          </div>
+
+          <button id="btnSaveSystemSettings" class="btn btn-purple btn-lg" style="margin-top: 10px; width: 220px;">💾 Lưu Cài Đặt Hệ Thống</button>
+        </div>
+      </section>
+
+      <!-- Bottom Log Console (Enhanced with Copy & Expand Buttons) -->
+      <footer class="log-console-footer" id="logFooter">
+        <div class="log-header">
+          <span class="log-title">📟 Logs chi tiết (Realtime Logs)</span>
+          <span class="log-badge" id="logCountBadge">0 dòng</span>
+          <div class="log-controls">
+            <button id="btnCopyLogs" class="btn-text-sm">📋 Copy Log</button>
+            <button id="btnClearLogs" class="btn-text-sm">🗑️ Xóa log</button>
+            <button id="btnToggleLog" class="btn-text-sm">↔️ Mở rộng</button>
+          </div>
+        </div>
+        <div class="log-body" id="logBody"></div>
+      </footer>
+
+    </div>
+
+    <!-- MODAL 1: TIKTOKSHOP SELECTION DIALOG -->
+    <div id="tiktokModal" class="modal-overlay hidden">
+      <div class="modal-container tiktok-modal-container-img2">
+        <div class="modal-header-tabs">
+          <span class="modal-tab-pill active">Danh sách Sản phẩm</span>
+          <button id="btnCloseTiktokModal" class="btn-close">&times;</button>
+        </div>
+        
+        <div class="modal-body tiktok-modal-body-split">
+          <!-- Left Column: Search & Table -->
+          <div class="tt-left-pane">
+            <div class="tt-search-row">
+              <label>🔍 Tìm kiếm:</label>
+              <input type="text" id="editTiktokModalSearch" class="custom-input flex-1" placeholder="Nhập tên hoặc ID sản phẩm...">
+            </div>
+
+            <div class="tt-modal-table-box">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th style="width: 30px;">#</th>
+                    <th style="width: 130px;">ID</th>
+                    <th>Tên sản phẩm</th>
+                    <th style="width: 70px;">Giá</th>
+                    <th style="width: 80px;">Voice MP3</th>
+                  </tr>
+                </thead>
+                <tbody id="ttModalTableBody">
+                  <!-- Tiktok products -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Right Column: Product Details & Images -->
+          <div class="tt-right-pane">
+            <div class="tt-detail-section-title">📋 Thông tin chi tiết:</div>
+            <h3 id="ttModalDetailTitle" class="tt-detail-main-title">Chưa chọn sản phẩm</h3>
+            
+            <div id="ttModalDetailDesc" class="tt-detail-desc-box">
+              Vui lòng chọn sản phẩm từ danh sách bên trái.
+            </div>
+
+            <div class="tt-detail-section-title" style="margin-top: 8px;">🖼️ Danh sách ảnh sản phẩm (Click chọn ảnh):</div>
+            <div id="ttModalGallery" class="tt-modal-images-gallery"></div>
+
+            <div id="ttModalSelectedImgLabel" class="tt-img-status-label">Chưa chọn ảnh sản phẩm</div>
+            <div id="ttModalVoiceInfoLabel" class="tt-voice-info-label">🗣️ Lồng tiếng: 0 file voice</div>
+
+            <!-- Manual download bar -->
+            <div class="tt-manual-voice-bar">
+              <input type="text" class="custom-input flex-1" placeholder="Dán link video TikTok để tải voice...">
+              <button class="btn btn-emerald btn-sm">📥 Tải Voice</button>
+            </div>
+
+            <!-- Bottom Actions Bar -->
+            <div class="tt-modal-bottom-actions">
+              <button id="btnCropTiktokModal" class="btn btn-secondary btn-sm" disabled>✂️ Cắt ảnh</button>
+              <button id="btnCollageTiktokModal" class="btn btn-secondary btn-sm" disabled>🧩 Ghép nhiều ảnh</button>
+              <button id="btnCancelTiktokModal" class="btn btn-secondary btn-sm">❌ Hủy</button>
+              <button id="btnConfirmTiktokModal" class="btn btn-cyan-gradient" disabled>✅ Chọn Sản Phẩm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 1B: GHÉP NHIỀU ẢNH (COLLAGE) DIALOG -->
+    <div id="collageModal" class="modal-overlay hidden">
+      <div class="modal-card modal-card-dark" style="max-width: 680px; width: 92%;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #4c1d95, #6d28d9); padding: 14px 18px;">
+          <h3 style="font-size: 15px; font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 8px;">
+            <span>🧩</span> Ghép Nhiều Ảnh Sản Phẩm (Collage)
+          </h3>
+          <button id="btnCloseCollageModal" class="close-btn" style="color: #cbd5e1; font-size: 22px;">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 18px; background: #0f172a;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span style="font-size: 12px; color: #94a3b8; font-weight: 600;">👉 Bấm trực tiếp vào khung ảnh để chọn/bỏ chọn:</span>
+            <span id="lblCollageSelectedCount" style="font-size: 12px; font-weight: 800; color: #38bdf8; background: #1e293b; padding: 4px 10px; border-radius: 20px; border: 1px solid #334155;">
+              Đã chọn: 2 ảnh
+            </span>
+          </div>
+          
+          <div id="collageThumbGrid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-height: 280px; overflow-y: auto; padding: 10px; background: #1e293b; border-radius: 10px; border: 1px solid #334155;"></div>
+          
+          <div style="display: flex; gap: 16px; margin-top: 16px; background: #1e293b; padding: 12px 14px; border-radius: 10px; border: 1px solid #334155;">
+            <div style="flex: 1;">
+              <label style="font-size: 12px; font-weight: 700; color: #e2e8f0; display: block; margin-bottom: 6px;">📐 Kiểu bố cục (Layout):</label>
+              <select id="selectCollageLayout" class="custom-select" style="width: 100%; background: #0f172a; color: #f8fafc; border-color: #475569; font-weight: 600; font-size: 12px;">
+                <option value="Lưới 2x2 (Tối đa 4 ảnh)" selected>Lưới 2x2 (Tối đa 4 ảnh)</option>
+                <option value="Lưới 1x1 (Tối đa 1 ảnh)">Lưới 1x1 (Tối đa 1 ảnh)</option>
+                <option value="Lưới 2x3 (Tối đa 6 ảnh)">Lưới 2x3 (Tối đa 6 ảnh)</option>
+                <option value="Lưới 3x3 (Tối đa 9 ảnh)">Lưới 3x3 (Tối đa 9 ảnh)</option>
+                <option value="Ngang (Tự động ghép ngang)">Ngang (Tự động ghép ngang)</option>
+                <option value="Dọc (Tự động ghép dọc)">Dọc (Tự động ghép dọc)</option>
+              </select>
+            </div>
+            <div style="flex: 1;">
+              <label style="font-size: 12px; font-weight: 700; color: #e2e8f0; display: block; margin-bottom: 6px;">🖼️ Tỷ lệ ảnh đầu ra (Ratio):</label>
+              <select id="selectCollageRatio" class="custom-select" style="width: 100%; background: #0f172a; color: #f8fafc; border-color: #475569; font-weight: 600; font-size: 12px;">
+                <option value="Vuông (1:1)" selected>Vuông (1:1)</option>
+                <option value="Ngang (16:9)">Ngang (16:9)</option>
+                <option value="Dọc (9:16)">Dọc (9:16)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="padding: 12px 18px; background: #1e293b; border-top: 1px solid #334155; display: flex; justify-content: flex-end; gap: 10px;">
+          <button id="btnCancelCollageModal" class="btn btn-secondary btn-sm" style="padding: 6px 14px; font-weight: 700;">❌ Hủy</button>
+          <button id="btnSubmitCollageModal" class="btn btn-purple btn-sm" style="padding: 6px 18px; font-weight: 800; background: linear-gradient(135deg, #7c3aed, #9333ea);">🧩 Ghép Ảnh</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 1C: CẮT ẢNH (CROPPER) DIALOG -->
+    <div id="cropModal" class="modal-overlay hidden">
+      <div class="modal-card modal-card-dark" style="max-width: 600px; width: 92%;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #065f46, #047857); padding: 14px 18px;">
+          <h3 style="font-size: 15px; font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 8px;">
+            <span>✂️</span> Cắt Ảnh Sản Phẩm (Cropper)
+          </h3>
+          <button id="btnCloseCropModal" class="close-btn" style="color: #cbd5e1; font-size: 22px;">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 18px; background: #0f172a; text-align: center;">
+          <div style="max-height: 280px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #1e293b; border-radius: 10px; padding: 12px; margin-bottom: 16px; border: 1px solid #334155;">
+            <img id="cropPreviewImg" src="" style="max-height: 250px; max-width: 100%; object-fit: contain; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 12px; text-align: left; background: #1e293b; padding: 14px; border-radius: 10px; border: 1px solid #334155;">
+            <div>
+              <label style="color: #e2e8f0; font-weight: 700; display: block; margin-bottom: 4px;">Lệch X (%): <span id="cropValX" style="color: #38bdf8; font-weight: 800;">0</span>%</label>
+              <input type="range" id="cropRangeX" min="0" max="80" value="0" style="width: 100%; accent-color: #38bdf8;">
+            </div>
+            <div>
+              <label style="color: #e2e8f0; font-weight: 700; display: block; margin-bottom: 4px;">Lệch Y (%): <span id="cropValY" style="color: #38bdf8; font-weight: 800;">0</span>%</label>
+              <input type="range" id="cropRangeY" min="0" max="80" value="0" style="width: 100%; accent-color: #38bdf8;">
+            </div>
+            <div>
+              <label style="color: #e2e8f0; font-weight: 700; display: block; margin-bottom: 4px;">Chiều rộng W (%): <span id="cropValW" style="color: #38bdf8; font-weight: 800;">100</span>%</label>
+              <input type="range" id="cropRangeW" min="20" max="100" value="100" style="width: 100%; accent-color: #38bdf8;">
+            </div>
+            <div>
+              <label style="color: #e2e8f0; font-weight: 700; display: block; margin-bottom: 4px;">Chiều cao H (%): <span id="cropValH" style="color: #38bdf8; font-weight: 800;">100</span>%</label>
+              <input type="range" id="cropRangeH" min="20" max="100" value="100" style="width: 100%; accent-color: #38bdf8;">
+            </div>
+          </div>
+          <div style="margin-top: 14px; display: flex; gap: 10px; justify-content: center;">
+            <button class="btn btn-secondary btn-sm" onclick="setCropPreset(0, 0, 100, 100)" style="font-weight: 700;">Gốc (100%)</button>
+            <button class="btn btn-secondary btn-sm" onclick="setCropPreset(10, 10, 80, 80)" style="font-weight: 700;">Vuông Giữa (1:1)</button>
+            <button class="btn btn-secondary btn-sm" onclick="setCropPreset(0, 15, 100, 70)" style="font-weight: 700;">Ngang Giữa</button>
+          </div>
+        </div>
+        <div class="modal-footer" style="padding: 12px 18px; background: #1e293b; border-top: 1px solid #334155; display: flex; justify-content: flex-end; gap: 10px;">
+          <button id="btnCancelCropModal" class="btn btn-secondary btn-sm" style="padding: 6px 14px; font-weight: 700;">❌ Hủy</button>
+          <button id="btnSubmitCropModal" class="btn btn-emerald btn-sm" style="padding: 6px 18px; font-weight: 800; background: linear-gradient(135deg, #059669, #10b981);">✂️ Cắt & Lưu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2: RE-RENDER CUSTOMIZATION DIALOG -->
+    <div id="rerenderModal" class="modal-overlay hidden">
+      <div class="modal-container rerender-modal-container-modern">
+        <div class="rerender-modal-header-dark">
+          <div class="rerender-header-title-box">
+            <span class="rerender-header-icon">🔄</span>
+            <div>
+              <h3>Tùy Chọn Render Lại (Re-render Pipeline)</h3>
+              <p id="lblRerenderModalProdTitle" class="rerender-sub-product-name">Sản phẩm: ...</p>
+            </div>
+          </div>
+          <button id="btnCloseRerenderModal" class="btn-close-light">&times;</button>
+        </div>
+        
+        <div class="modal-body rerender-modal-body-styled">
+          <div class="rerender-instruction-banner">
+            💡 <strong>Tích chọn chính xác thành phần bạn muốn render lại:</strong> Không tích ô nào thì ô đó sẽ được giữ nguyên (không bị ghi đè hay sinh lại).
+          </div>
+          
+          <!-- SECTION 1: LLM SCRIPT -->
+          <div class="rerender-card-box" id="boxRerenderScript">
+            <div class="rerender-card-top">
+              <label class="checkbox-label-lg">
+                <input type="checkbox" id="chkRerenderScript" onchange="toggleRerenderSection('Script')">
+                <span class="chk-custom-box"></span>
+                <span class="chk-label-title">📝 Render lại Kịch bản (LLM biên kịch)</span>
+              </label>
+            </div>
+            <div class="rerender-card-options disabled-opt" id="optRerenderScript">
+              <div class="form-row">
+                <div class="form-group half">
+                  <label>Chọn Model LLM:</label>
+                  <select id="rerenderLlmModel" class="custom-select"></select>
+                </div>
+                <div class="form-group half">
+                  <label>Chế độ Voice Mode:</label>
+                  <select id="rerenderVoiceMode" class="custom-select">
+                    <option value="narrative_review">Review dẫn chuyện (narrative_review)</option>
+                    <option value="verbatim_read">Đọc nguyên văn (verbatim_read)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2: AI IMAGES -->
+          <div class="rerender-card-box" id="boxRerenderImages">
+            <div class="rerender-card-top">
+              <label class="checkbox-label-lg">
+                <input type="checkbox" id="chkRerenderImages" onchange="toggleRerenderSection('Images')">
+                <span class="chk-custom-box"></span>
+                <span class="chk-label-title">🖼️ Render lại Ảnh AI (Storyboard Images)</span>
+              </label>
+            </div>
+            <div class="rerender-card-options disabled-opt" id="optRerenderImages">
+              <div class="form-row margin-bottom">
+                <div class="form-group half">
+                  <label>Chọn Model Ảnh AI:</label>
+                  <select id="rerenderImgModel" class="custom-select"></select>
+                </div>
+                <div class="form-group half">
+                  <label>Chất lượng ảnh:</label>
+                  <select id="rerenderImgQuality" class="custom-select">
+                    <option value="1K (1024x1280 / Standard)">1K (1024x1280 / Standard)</option>
+                    <option value="2K (2048x2560 / Ultra HD)">2K (2048x2560 / Ultra HD)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Scene Selector List inside Images Option -->
+              <div class="rerender-scene-select-area">
+                <label class="scene-area-lbl">🎯 Chọn phân cảnh cần vẽ lại ảnh:</label>
+                <div class="rerender-scenes-checklist" id="rerenderScenesChecklist">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3: VOICEOVER -->
+          <div class="rerender-card-box" id="boxRerenderVoice">
+            <div class="rerender-card-top">
+              <label class="checkbox-label-lg">
+                <input type="checkbox" id="chkRerenderVoice" onchange="toggleRerenderSection('Voice')">
+                <span class="chk-custom-box"></span>
+                <span class="chk-label-title">🗣️ Render lại Giọng nói (Voiceover MP3)</span>
+              </label>
+            </div>
+            <div class="rerender-card-options disabled-opt" id="optRerenderVoice">
+              <div class="form-group">
+                <label>Engine Voiceover:</label>
+                <select id="rerenderVoiceEngine" class="custom-select">
+                  <option value="gtts">gTTS Tiếng Việt</option>
+                  <option value="vbee">Vbee API</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 4: VIDEO ASSEMBLY -->
+          <div class="rerender-card-box" id="boxRerenderVideo">
+            <div class="rerender-card-top">
+              <label class="checkbox-label-lg">
+                <input type="checkbox" id="chkRerenderVideo" onchange="toggleRerenderSection('Video')">
+                <span class="chk-custom-box"></span>
+                <span class="chk-label-title">🎬 Dựng lại Video hoàn chỉnh (FFmpeg Assembly)</span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="rerender-modal-footer">
+          <button id="btnCancelRerenderModal" class="btn btn-secondary btn-lg">❌ Hủy bỏ</button>
+          <button id="btnConfirmRerenderModal" class="btn btn-orange-gradient btn-lg">🚀 THỰC HIỆN RENDER LẠI</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MODAL 3: ROLE SKILL MANAGER DIALOG -->
+    <div id="roleModal" class="modal-overlay hidden">
+      <div class="modal-container role-modal-container">
+        <div class="modal-header">
+          <h3>📂 Quản Lý & Chỉnh Sửa Role Skill (Trực Tiếp Data)</h3>
+          <button id="btnCloseRoleModal" class="btn-close">&times;</button>
+        </div>
+        <div class="modal-body role-editor-body">
+          <div class="role-left-pane">
+            <span style="font-size: 11px; font-weight: 700; color: var(--text-muted);">Danh sách Role Skill:</span>
+            <div class="role-file-list" id="roleFileList"></div>
+            <div class="role-left-actions">
+              <button id="btnModalAddRole" class="btn btn-emerald btn-sm flex-1">➕ Thêm Mới</button>
+              <button id="btnModalDelRole" class="btn btn-red btn-sm flex-1">🗑️ Xóa File</button>
+            </div>
+          </div>
+
+          <div class="role-editor-area">
+            <div class="editor-toolbar">
+              <span id="lblActiveRoleFile" style="font-size: 12px; font-weight: 700; color: var(--color-purple);">Đang chọn: RoleSkill.MD</span>
+              <span id="lblRoleFileStats" style="font-size: 10px; color: var(--text-muted);">5 dòng — 75 B</span>
+            </div>
+            <textarea id="txtRoleContent" class="role-textarea" spellcheck="false"></textarea>
+            
+            <div class="role-editor-footer">
+              <span id="lblRoleTotalFiles" style="font-size: 11px; font-weight: 700; color: var(--color-emerald);">✔ Tổng 2 file Role Skill trong Data</span>
+              <button id="btnSaveRoleContent" class="btn btn-purple btn-lg">💾 LƯU FILE DATA TRỰC TIẾP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX IMAGE PREVIEW MODAL -->
+    <div id="imageLightboxModal" class="modal-overlay hidden" onclick="closeLightbox()">
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightboxImage" src="" alt="Full Preview">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
